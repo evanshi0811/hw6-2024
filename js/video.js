@@ -1,5 +1,5 @@
 var video;
-let volume = 100;
+let volume = 1;
 let mute = false;
 let speed = 1;
 
@@ -14,7 +14,7 @@ document.querySelector("#play").addEventListener("click", function() {
  	console.log("Playing Video");
 	video.play();
 	video.volume = volume;
-	document.querySelector("#volume").innerHTML = volume * 100 + "%";
+	document.querySelector("#volume").innerHTML = ((volume * 100) + "%");
 	video.mute = mute;
 });
 
